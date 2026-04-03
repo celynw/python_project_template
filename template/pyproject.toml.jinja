@@ -3,7 +3,12 @@ name = "{{ project_slug }}"
 version = "0.1.0"
 authors = [{ name = "{{ author_name }}", email = "{{ author_email }}" }]
 requires-python = ">={{ python_version }}"
-dependencies = []
+dependencies = [
+	"typer>=0.24",
+]
+
+[project.scripts]
+{{ project_slug }} = "{{ project_slug }}.main:app"
 
 [dependency-groups]
 dev = [
