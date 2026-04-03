@@ -1,0 +1,25 @@
+_subdirectory: template
+
+project_name:
+  type: str
+  help: "Project name"
+
+project_slug:
+  type: str
+  help: "Package name"
+  default: "{{ project_name | lower | replace(' ', '_') | replace('-', '_') }}"
+
+author_name:
+  type: str
+  help: "Author name"
+  default: "Celyn Walters"
+
+author_email:
+  type: str
+  help: "Author email"
+  default: "3299161+celynw@users.noreply.github.com"
+
+python_version:
+  type: str
+  help: "Minimum Python version"
+  default: "3.14"
