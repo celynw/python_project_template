@@ -38,7 +38,7 @@ uv tool install prek
 ## Creating a new project
 
 ```bash
-copier copy gh:celynw/python-project-template /path/to/new-project
+copier copy git@github.com:celynw/python-project-template.git /path/to/new-project
 ```
 
 You'll be prompted for:
