@@ -39,6 +39,11 @@ hooks = [
 ]
 
 [[repos]]
+repo = "https://github.com/DavidAnson/markdownlint-cli2"
+rev = "v0.22.0"
+hooks = [{ id = "markdownlint-cli2" }]
+
+[[repos]]
 repo = "https://github.com/astral-sh/uv-pre-commit"
 rev = "0.11.3"
 hooks = [{ id = "uv-lock" }]
