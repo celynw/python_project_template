@@ -33,30 +33,30 @@ line-length = 88
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = [
-	"ANN003",  # Missing type annotation for **kwargs
-	"CPY001",  # Missing copyright notice at top of file (LICENSE file is sufficient)
-	"D107",    # Missing docstring in `__init__` (put it on the class instead)
-	"D203",    # 1 blank line required before class docstring (conflicts with D211)
-	"D206",    # Docstring should be indented with spaces, not tabs (formatter handles this)
-	"D212",    # Multi-line docstring summary should start at first line (conflicts with D213)
-	"D413",    # Missing blank line after last section
-	"E203",    # Whitespace before ':' (conflicts with black slice style `list[1 : 1 + 1]`)
-	"ERA001",  # Found commented-out code
-	"ISC001",  # Implicitly concatenated string literals (conflicts with ruff formatter)
-	"TD003",   # Missing issue link on the line following this TODO
-	"W191",    # Indentation contains tabs (formatter handles this)
+	"ANN003", # Missing type annotation for **kwargs
+	"CPY001", # Missing copyright notice at top of file (LICENSE file is sufficient)
+	"D107",   # Missing docstring in `__init__` (put it on the class instead)
+	"D203",   # 1 blank line required before class docstring (conflicts with D211)
+	"D206",   # Docstring should be indented with spaces, not tabs (formatter handles this)
+	"D212",   # Multi-line docstring summary should start at first line (conflicts with D213)
+	"D413",   # Missing blank line after last section
+	"E203",   # Whitespace before ':' (conflicts with black slice style `list[1 : 1 + 1]`)
+	"ERA001", # Found commented-out code
+	"ISC001", # Implicitly concatenated string literals (conflicts with ruff formatter)
+	"TD003",  # Missing issue link on the line following this TODO
+	"W191",   # Indentation contains tabs (formatter handles this)
 ]
 unfixable = [
-	"B007",  # Loop control variable not used in loop body
-	"B905",  # `zip()` without an explicit `strict=` parameter
-	"D204",  # 1 blank line required after class docstring
-	"F401",  # Imported but unused
-	"F841",  # Local variable is assigned to but never used
+	"B007", # Loop control variable not used in loop body
+	"B905", # `zip()` without an explicit `strict=` parameter
+	"D204", # 1 blank line required after class docstring
+	"F401", # Imported but unused
+	"F841", # Local variable is assigned to but never used
 ]
 
 [tool.ruff.lint.extend-per-file-ignores]
 "**/__init__.py" = [
-	"D104",  # Missing docstring in public package
+	"D104", # Missing docstring in public package
 ]
 "test/**/*.py" = [
 	"D100",    # Missing docstring in public module
