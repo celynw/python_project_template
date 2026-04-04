@@ -40,7 +40,12 @@ rev = "v1.20.0"
 hooks = [
 	# Add stubs to additional_dependencies as needed, e.g.:
 	# additional_dependencies = ["types-requests"]
-	{ id = "mypy", args = ["--ignore-missing-imports"] },
+	{ id = "mypy", args = [
+		"--ignore-missing-imports",
+	], additional_dependencies = [
+		"pytest",
+		"typer",
+	] },
 ]
 
 [[repos]]
